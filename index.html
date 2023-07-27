@@ -58,7 +58,7 @@
 					diameter: 4
 				}, scene);
 				playerSphere.material = new BABYLON.StandardMaterial("playerSphereMaterial", scene);
-				playerSphere.material.diffuseTexture = new Texture('resources//violet-merger-blue-gradient-wallpaper-preview.jpg', scene);
+				playerSphere.material.diffuseTexture = new BABYLON.Texture('resources/BeachBallColor.jpg', scene);
 				playerSphere.position = new BABYLON.Vector3(xFn(0), 9, zFn(0));
 
 				playerSphere.physicsImpostor = new BABYLON.PhysicsImpostor(playerSphere, BABYLON.PhysicsImpostor.SphereImpostor, {
@@ -123,7 +123,7 @@
 			function drawParametric(xFn, zFn, start, end, res, scene) {
 				for (var t = start; t <= end; t += ((end - start) / res)) {
 					noce += 5
-					drawPoint(xFn(t), zFn(t), scene);
+					drawPoint(xFn(t), zFn(t), , scene);
 				}
 			}
 
