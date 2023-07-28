@@ -119,11 +119,10 @@
 					restitution: 0.9
 				}, scene);
 			}
-			var noce = 2
+
 			function drawParametric(xFn, zFn, start, end, res, scene) {
 				for (var t = start; t <= end; t += ((end - start) / res)) {
-					noce += 5
-					drawPoint(xFn(t), zFn(t),  scene);
+					drawPoint(xFn(t), zFn(t), scene);
 				}
 			}
 
